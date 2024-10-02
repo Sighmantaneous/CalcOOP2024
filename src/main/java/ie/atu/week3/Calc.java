@@ -30,6 +30,10 @@ public class Calc {
                 result = add(firstNumber,secondNumber);
                 break;
 
+            case "subtract":
+                result = subtract(firstNumber,secondNumber);
+                break;
+
             default:
                 System.out.println("Invalid operation");
                 validOperation = false;
@@ -46,5 +50,8 @@ public class Calc {
     public static double add(double a, double b) {
         return a + b;
 
+    }
+    public static double subtract(double a, double b) {
+        return a - b;
     }
 }
