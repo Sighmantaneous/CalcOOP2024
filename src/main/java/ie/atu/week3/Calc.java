@@ -34,6 +34,10 @@ public class Calc {
                 result = subtract(firstNumber,secondNumber);
                 break;
 
+            case "multiply":
+                result = multiply(firstNumber,secondNumber);
+                break;
+
             default:
                 System.out.println("Invalid operation");
                 validOperation = false;
@@ -53,5 +57,9 @@ public class Calc {
     }
     public static double subtract(double a, double b) {
         return a - b;
+    }
+
+    public static double multiply(double a, double b) {
+        return a * b;
     }
 }
