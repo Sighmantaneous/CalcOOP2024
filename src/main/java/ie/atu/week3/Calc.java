@@ -5,6 +5,7 @@ Week 3 assignment - Using git to add updated methods to Calc file.
  */
 
 package ie.atu.week3;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Calc {
@@ -38,6 +39,15 @@ public class Calc {
                 result = multiply(firstNumber,secondNumber);
                 break;
 
+            case "divide":
+                if(secondNumber == 0){
+                    validOperation = false;
+                    System.out.println(("Cannot divide by zero"));
+                }
+                result = divide(firstNumber,secondNumber);
+
+                break;
+
             default:
                 System.out.println("Invalid operation");
                 validOperation = false;
@@ -61,5 +71,9 @@ public class Calc {
 
     public static double multiply(double a, double b) {
         return a * b;
+    }
+
+    public static double divide(double a, double b) {
+        return a / b;
     }
 }
