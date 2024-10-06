@@ -47,6 +47,8 @@ public class Calc {
                 result = divide(firstNumber,secondNumber);
 
                 break;
+            case "pow":
+                result = pow(firstNumber,secondNumber);
 
             default:
                 System.out.println("Invalid operation");
@@ -75,5 +77,7 @@ public class Calc {
 
     public static double divide(double a, double b) {
         return a / b;
+    }
+    public static double pow(double a, double b) {return Math.pow(a, b);
     }
 }
