@@ -5,7 +5,7 @@ Week 3 assignment - Using git to add updated methods to Calc file.
  */
 
 package ie.atu.week3;
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
 
 public class Calc {
